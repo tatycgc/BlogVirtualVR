@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <title>Tatiana Portfolio</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+                Tatiana <span>B. <i>🕶️</i></span>
+
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="index.html">Inicio</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="metavr.html">O Metaverso</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="realidadevr.html">Realidade Virtual</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="mundovr.html">Mundo Virtual</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="vreducativo.html">VR Educativo</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="contato.html">Contato</a></div>
+                </div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="index.html">Inicio</a>
+                <a href="realidadevr.html">Realidade Virtual</a>
+                <a href="mundovr.html">Mundo virtual</a>
+                <a href="vreducativo.html">VR Educativo</a>
+                <a href="contato.html">Contato</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+    <div class="about-section">
+        <h1 class="title-red" data-aos="fade-right" data-aos-duration="1500">Mundos Virtuais: Mais do que Jogos</h1>
+        <p class="text-white" data-aos="fade-left" data-aos-duration="1500">
+            Quando pensamos em mundos virtuais, é comum associá-los a videogames. Porém, esses espaços digitais vão muito além do entretenimento. Plataformas como Second Life e Decentraland permitem que usuários criem negócios virtuais, socializem e até participem de eventos culturais. Essas imagens mostram algumas possibilidades do mundo virtual e como eles estão se tornando parte do dia a dia.
+        </p>
+        <div class="photo-grid" data-aos="zoom-in" data-aos-duration="1500">
+            <img src="photo1.jpg" alt="Photo 1">
+            <img src="photo2.jpg" alt="Photo 2">
+            <img src="photo3.jpg" alt="Photo 3">
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init({offset:0});
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

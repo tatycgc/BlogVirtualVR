@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <title>Skills - Tatiana Portfolio</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+                Tatiana <span>B. <i>🕶️</i></span>
+
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="index.html">Inicio</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="metavr.html">O Metaverso</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="realidadevr.html">Realidade Virtual</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="mundovr.html">Mundo Virtual</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="vreducativo.html">VR Educativo</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="contato.html">Contato</a></div>
+                </div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="index.html">Inicio</a>
+                <a href="realidadevr.html">Realidade Virtual</a>
+                <a href="mundovr.html">Mundo virtual</a>
+                <a href="vreducativo.html">Sobre o Jogo VR</a>
+                <a href="contato.html">Contato</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+    <div class="skills-section">
+        <h1 class="title-red" data-aos="fade-right" data-aos-duration="1500">O Futuro do Metaverso e VR na Educação</h1>
+        <p class="text-white" data-aos="fade-left" data-aos-duration="1500">
+            "Com o uso de óculos VR, o metaverso permite experiências tridimensionais que imitam o mundo real ou criam novas realidades. Itens e serviços digitais podem ser comprados e vendidos. Idealmente, o metaverso é uma rede de mundos virtuais conectados, onde você pode mover seu avatar, identidade e bens digitais entre diferentes plataformas."
+        </p>
+        <div class="slider">
+            <div class="slides">
+                <input type="radio" name="slide" id="slide1" checked>
+                <input type="radio" name="slide" id="slide2">
+                <input type="radio" name="slide" id="slide3">
+                <input type="radio" name="slide" id="slide4">
+                <input type="radio" name="slide" id="slide5">
+
+                <div class="slide s1">
+                    <img src="src/1.jpg" alt="Images 1">
+                </div>
+                <div class="slide">
+                    <img src="src/2.jpg" alt="Images 2">
+                </div>
+                <div class="slide">
+                    <img src="src/3.jpg" alt="Images 3">
+                </div>
+                <div class="slide">
+                    <img src="src/4.jpg" alt="Images 4">
+                </div>
+                <div class="slide">
+                    <img src="src/5.jpg" alt="Images 5">
+                </div>
+            </div>
+
+            <div class="navigation">
+                <label class="bar" for="slide1"></label>
+                <label class="bar" for="slide2"></label>
+                <label class="bar" for="slide3"></label>
+                <label class="bar" for="slide4"></label>
+                <label class="bar" for="slide5"></label>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init({offset:0});
+    </script>
+    <script src="realidadevrScript.js"></script>
+</body>
+</html>

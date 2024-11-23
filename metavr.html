@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="metavrstyle.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <title>Realidade Virtual - Presente na Saúde e Educação</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+                Tatiana <span>B. <i>🕶️</i></span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="index.html">Inicio</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="metavr.html">O Metaverso</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="realidadevr.html">Realidade Virtual</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="mundovr.html">Mundo Virtual</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="vreducativo.html">VR Educativo</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="contato.html">Contato</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="index.html">Inicio</a>
+                <a href="metavr.html">O Metaverso</a>
+                <a href="realidadevr.html">Realidade Virtual</a>
+                <a href="mundovr.html">Mundo Virtual</a>
+                <a href="vreducativo.html">VR Educativo</a>
+                <a href="contato.html">Contato</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+
+    <div class="section">
+        <h1 class="title-red" data-aos="fade-right" data-aos-duration="1500">Realidade Virtual - Presente na Saúde e Educação</h1>
+        <p class="text-white" data-aos="fade-left" data-aos-duration="1500">"A realidade virtual (VR) está transformando a medicina e a educação. Na medicina, permite simulações cirúrgicas e tratamentos para fobias e dores, melhorando a precisão e o cuidado do paciente. Na educação, oferece experiências imersivas que ajudam alunos a entender conceitos complexos, como explorar períodos históricos ou o corpo humano, além de treinar habilidades técnicas sem custos elevados. A VR promove maior engajamento e melhores resultados em ambas as áreas."
+        </p>
+
+    <div class="carrossel-container">
+        <button class="anterior" onclick="slideAnterior()">&#10094;</button>
+        <div class="carrossel">
+            <div class="slide"><a href="imagens/Imagem01.jpg" target="_blank"><img src="imagens/Imagem01.jpg" alt="Imagem 01"></a></div>
+            <div class="slide"><a href="imagens/Imagem02.jpg" target="_blank"><img src="imagens/Imagem02.jpg" alt="Imagem 02"></a></div>
+            <div class="slide"><a href="imagens/Imagem03.jpg" target="_blank"><img src="imagens/Imagem03.jpg" alt="Imagem 03"></a></div>
+            <div class="slide"><a href="imagens/Imagem04.jpg" target="_blank"><img src="imagens/Imagem04.jpg" alt="Imagem 04"></a></div>
+            <div class="slide"><a href="imagens/Imagem05.jpg" target="_blank"><img src="imagens/Imagem05.jpg" alt="Imagem 05"></a></div>
+            <div class="slide"><a href="imagens/Imagem06.jpg" target="_blank"><img src="imagens/Imagem06.jpg" alt="Imagem 06"></a></div>
+            <div class="slide"><a href="imagens/Imagem07.jpg" target="_blank"><img src="imagens/Imagem07.jpg" alt="Imagem 07"></a></div>
+            <div class="slide"><a href="imagens/Imagem08.jpg" target="_blank"><img src="imagens/Imagem08.jpg" alt="Imagem 08"></a></div>
+            <div class="slide"><a href="imagens/Imagem09.jpg" target="_blank"><img src="imagens/Imagem09.jpg" alt="Imagem 09"></a></div>
+            <div class="slide"><a href="imagens/Imagem10.jpg" target="_blank"><img src="imagens/Imagem10.jpg" alt="Imagem 10"></a></div>
+            <div class="slide"><a href="imagens/Imagem11.jpg" target="_blank"><img src="imagens/Imagem11.jpg" alt="Imagem 11"></a></div>
+            <div class="slide"><a href="imagens/Imagem12.jpg" target="_blank"><img src="imagens/Imagem12.jpg" alt="Imagem 12"></a></div>
+        </div>
+        <button class="proximo" onclick="slideProximo()">&#10095;</button>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({ offset: 0 });
+    </script>
+    <script src="metavrScript.js"></script>
+</body>
+</html>

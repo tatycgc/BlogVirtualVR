@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="vreducativostyle.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <title>VR Educativo - Página de Apresentação</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+                Tatiana <span>B. <i>🕶️</i></span>
+
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="index.html">Inicio</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="metavr.html">O Metaverso</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="realidadevr.html">Realidade Virtual</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="mundovr.html">Mundo Virtual</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="vreducativo.html">VR Educativo</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="contato.html">Contato</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="index.html">Inicio</a>
+                <a href="realidadevr.html">Realidade Virtual</a>
+                <a href="mundovr.html">Mundo virtual</a>
+                <a href="vreducativo.html">VR Educativo</a>
+                <a href="contato.html">Contato</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+
+    <div class="game-intro">
+        <h1 class="title-red" data-aos="fade-right" data-aos-duration="1500">Minhas Experiências Educativas e de  Lazer Com O VR </h1>
+        <p class="text-white" data-aos="fade-left" data-aos-duration="1500"> "No VR Quest, tive experiências incríveis em diferentes áreas. No Xadrez 3D, o ambiente imersivo transforma a estratégia do jogo, trazendo profundidade e realismo. Na Anatomia Humana, explorei o corpo com detalhes impressionantes, como se estivesse dentro de um atlas vivo. Já no Google Earth, viajei por cidades e paisagens, experimentando o mundo de uma maneira completamente nova. Essas vivências mostram o grande potencial do VR para aprendizado, lazer e exploração."
+        </p>
+        <div class="play-button" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">
+            <a href="https://beatsaber.com/" class="play-now-btn" target="_blank">Ver vídeo</a>
+    </div>
+  </div>
+
+    <div class="carrossel-container">
+        <button class="anterior">&#10094</button>
+
+        <div class="slide">
+            <a href="Imagem1.jpg" target="_blank">
+                <img src="Imagem1.jpg" alt="Imagem 1">
+            </a>
+            <div class="info">
+                <h2>Educativo VR</h2>
+                <p>Anatomia Humana VR</p>
+            </div>
+        </div>
+
+        <div class="slide">
+            <a href="Imagem2.jpg" target="_blank">
+                <img src="Imagem2.jpg" alt="Imagem 2">
+            </a>
+            <div class="info">
+                <h2>Educativo VR 2</h2>
+                <p>Xadrez 3D VR</p>
+            </div>
+        </div>
+
+        <div class="slide">
+            <a href="Imagem3.jpg" target="_blank">
+                <img src="Imagem3.jpg" alt="Imagem 3">
+            </a>
+            <div class="info">
+                <h2>Educativo VR 3</h2>
+                <p>Google Earth VR</p>
+            </div>
+        </div>
+
+        <div class="slide">
+            <a href="Imagem4.jpg" target="_blank">
+                <img src="Imagem4.jpg" alt="Imagem 4">
+            </a>
+            <div class="info">
+                <h2>Educativo VR 4</h2>
+                <p>Google earth VR Cristo Redentor</p>
+            </div>
+        </div>
+
+        <button class="proximo">&#10095</button>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({ offset: 0 });
+    </script>
+    <script src="vreducativoScript.js"></script>
+</body>
+</html>
