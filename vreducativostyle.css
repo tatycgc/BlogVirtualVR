@@ -446,7 +446,58 @@ button.proximo {
 }
 
 @media (max-width: 600px) {
-    .jogovr-section {
+    .vreducativo-section {
         padding: 10px;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .main-container .image {
+        width: 80%; /* Torna a imagem menor em telas pequenas */
+        height: auto;
+    }
+
+    .slide {
+        width: 80%;
+        height: auto;
+    }
+}
+
+@media (max-width:884px) {
+    nav .logo {
+        position: absolute;
+        top: 16px;
+        left: 15px;
+        font-size: 1.5rem;
+    }
+
+    .main-container {
+        display: flex;
+        flex-direction: column; /* Adapta o layout para empilhar elementos */
+    }
+
+    .nav-container .links {
+        display: none; /* Esconde links do menu */
+    }
+
+    .hamburg, .cancel {
+        display: block; /* Exibe os ícones do menu hamburguer */
+    }
+
+    .main-container .content {
+        width: 80%; /* Reduz a largura do conteúdo */
+    }
+
+    .social-links i {
+        width: 2.5rem;
+        height: 2.5rem;
+        font-size: 1.5rem;
+    }
+
+    .main-container .image {
+        z-index: -1;
+        width: 60%;
+        height: 50%;
     }
 }

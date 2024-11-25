@@ -48,5 +48,3 @@ function eraseText() {
 window.onload = function() {
     typeWriter();
 };
-
-

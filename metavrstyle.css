@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
 
 * {
     padding: 0;
@@ -133,6 +134,33 @@ nav {
     color: white;
     width: 50%;
     min-height: 120px;
+}
+
+
+.dropdown{
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    transform: translateY(-500px);
+    width: 100%;
+    height: auto;
+    backdrop-filter: blur(4px) brightness(40%);
+    box-shadow:  0 0 20px black;
+    transition: 0.2s linear;
+}
+
+.dropdown .links a{
+    display: flex;
+    color: white;
+    text-decoration: none;
+    justify-content: center;
+    padding: 15px 0;
+    align-items: center;
+    transition: 0.2s linear;
+}
+
+.dropdown .links a:hover{
+    background-color:  #8e00f9;
 }
 
 .content h1 {
@@ -331,17 +359,9 @@ button.proximo {
 
 }
 
-@media (max-width: 768px) {
-    .nav-container .links {
-        display: none;
+@media (max-width: 600px) {
+    .metavr-section {
+        padding: 15px;
     }
-    .dropdown {
-        display: block;
-    }
-}
 
-@media (min-width: 769px) {
-    .dropdown {
-        display: none;
-    }
 }

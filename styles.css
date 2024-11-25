@@ -181,7 +181,7 @@ section{
 
 .content p{
     font-size: clamp(0.4rem , 0.2rem + 9vw, 1rem);
-    margin: 10px 0;
+    margin: 30px 0;
 }
 
 .social-links i{
@@ -606,7 +606,7 @@ section{
 }
 
 .main-container {
-    margin-top: 50px; 
+    margin-top: 50px;
 }
 
 .content {
@@ -617,3 +617,98 @@ canvas {
     margin: 0 auto;
 }
 
+
+.main-container .image,
+canvas {
+    width: 90%;
+    height: auto;
+    margin: 10px auto;
+}
+
+@media (max-width: 440px) {
+    .main-container .image,
+    canvas {
+        width: 60%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .main-container .content {
+        width: 90%;
+    }
+}
+
+
+@media (max-width: 884px) {
+    .main-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .main-container .content {
+        width: 80%;
+        text-align: center;
+    }
+
+    .main-container .image,
+    canvas {
+        width: 90%;
+        height: auto;
+        margin: 10px auto;
+    }
+}
+
+@media (max-width: 440px) {
+    .main-container .image,
+    canvas {
+        width: 90%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .main-container .content {
+        width: 90%;
+    }
+}
+
+@media (max-width: 884px) {
+    nav {
+        z-index: 10;
+        position: fixed;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .main-container .image {
+        z-index: 1;
+    }
+}
+
+@media (max-width: 884px) {
+    body {
+        overflow-y: auto;
+    }
+}
+
+@media (max-width: 884px) {
+    .content button {
+        width: 50%;
+        margin: 60px auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .dropdown {
+        display: block;
+    }
+
+    .nav-container .links {
+        display: none;
+    }
+
+    .hamburg {
+        display: block;
+        cursor: pointer;
+    }
+}
