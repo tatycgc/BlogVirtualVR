@@ -46,6 +46,7 @@ nav{
     top: 10px;
     color: white;
     display: none;
+    transition: transform 0.3s ease;
     font-size: clamp(2.5rem, 0.5rem + 5vw, 3rem);
 }
 
@@ -135,7 +136,7 @@ section{
 }
 
 .main-container .image:hover{
-    animation: animate 1.5s ease-in-out infinite;
+    animation: animate 0.5s ease-in-out infinite;
 }
 
 @keyframes animate {
@@ -474,19 +475,19 @@ button.proximo {
 
     .main-container {
         display: flex;
-        flex-direction: column; /* Adapta o layout para empilhar elementos */
+        flex-direction: column; 
     }
 
     .nav-container .links {
-        display: none; /* Esconde links do menu */
+        display: none; 
     }
 
     .hamburg, .cancel {
-        display: block; /* Exibe os ícones do menu hamburguer */
+        display: block; 
     }
 
     .main-container .content {
-        width: 80%; /* Reduz a largura do conteúdo */
+        width: 80%; 
     }
 
     .social-links i {
