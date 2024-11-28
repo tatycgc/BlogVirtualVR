@@ -1,26 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
 
-*{
+* {
     padding: 0;
     margin: 0;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
 
-body{
+body {
     width: 100%;
     height: 100vh;
     overflow: hidden;
     background-color: black;
 }
 
-nav{
+nav {
     width: 100%;
     height: 10vh;
     position: sticky;
 }
 
-.nav-container{
+.nav-container {
     width: 90%;
     height: 100%;
     display: flex;
@@ -28,18 +28,20 @@ nav{
     align-items: center;
 }
 
-.logo{
+.logo {
     color: white;
     font-size: 2rem;
     font-weight: bold;
 }
 
-.logo span{
-    color:  #8e00f9;
-    text-shadow: 0 0 10px  #8e00f9;
+.logo span {
+    color: #8e00f9;
+    text-shadow: 0 0 10px #8e00f9;
 }
 
-.hamburg, .cancel{
+
+.hamburg,
+.cancel {
     cursor: pointer;
     position: absolute;
     right: 15px;
@@ -49,11 +51,11 @@ nav{
     font-size: clamp(2.5rem, 0.5rem + 5vw, 3rem);
 }
 
-.nav-container .links{
+.nav-container .links {
     display: flex;
 }
 
-.nav-container .links a{
+.nav-container .links a {
     position: relative;
     font-size: 1.2rem;
     color: white;
@@ -63,26 +65,26 @@ nav{
     transition: 0.3s linear;
 }
 
-.nav-container .links a::before{
+.nav-container .links a::before {
     position: absolute;
     content: "";
     bottom: -3px;
     left: 0;
     width: 0%;
     height: 3px;
-    background-color:  #8e00f9;
+    background-color: #8e00f9;
     transition: 0.2s linear;
 }
 
-.nav-container .links a:hover::before{
+.nav-container .links a:hover::before {
     width: 100%;
 }
 
-.nav-container .links a:hover{
-    color:  #8e00f9;
+.nav-container .links a:hover {
+    color: #8e00f9;
 }
 
-.dropdown{
+.dropdown {
     z-index: 100;
     position: absolute;
     top: 0;
@@ -90,11 +92,11 @@ nav{
     width: 100%;
     height: auto;
     backdrop-filter: blur(4px) brightness(40%);
-    box-shadow:  0 0 20px black;
+    box-shadow: 0 0 20px black;
     transition: 0.2s linear;
 }
 
-.dropdown .links a{
+.dropdown .links a {
     display: flex;
     color: white;
     text-decoration: none;
@@ -104,53 +106,57 @@ nav{
     transition: 0.2s linear;
 }
 
-.dropdown .links a:hover{
-    background-color:  #8e00f9;
+.dropdown .links a:hover {
+    background-color: #8e00f9;
 }
 
-section{
+section {
     width: 100%;
     height: 90vh;
 }
 
-.main-container{
+.main-container {
     width: 100%;
-    height: 100%;
+    height: 70%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
+    flex-direction: column; /* Adicionado para melhor layout em telas menores */
 }
 
-.main-container .image{
+.main-container .image {
     width: 250px;
-    max-width: 1000px;
+    max-width: 100%;
     height: auto;
-    border-radius: 100%;
+    border-radius: 50%;
     overflow: hidden;
-    box-shadow: 0 0 50px  #8e00f9;
+    box-shadow: 0 0 50px #8e00f9;
 }
 
-.main-container .image img{
+.main-container .image img {
     width: 100%;
+    height: auto;
+    object-fit: cover; 
 }
 
-.main-container .image:hover{
+.main-container .image:hover {
     animation: animate 1.5s ease-in-out infinite;
 }
 
 @keyframes animate {
-    0%{
+    0% {
         scale: 1;
     }
 
-    50%{
+    50% {
         scale: 1.05;
     }
 
-    100%{
+    100% {
         scale: 1;
     }
 }
+
 
 .main-container .content{
     color: white;
@@ -182,66 +188,31 @@ section{
     margin: 10px 0;
 }
 
-.social-links i{
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 3rem;
-    height: 3rem;
-    background-color: transparent;
-    border: 0.2rem solid  #8e00f9;
-    border-radius: 50%;
-    color:  #8e00f9;
-    margin: 5px 15px;
-    font-size: 1.5rem;
-    transition: 0.2s linear;
-}
-
-.social-links i:hover{
-    scale: 1.3;
-    color: black;
-    background-color:  #8e00f9;
-    filter: drop-shadow(0 0 10px  #8e00f9);
-}
-
-.content button{
-    width: 50%;
-    height: 6vh;
-    margin: 30px;
-    background-color:  #8e00f9;
+button {
+    margin: 20px;
+    padding: 10px 20px;
+    background-color: #8e00f9;
     color: white;
     border: none;
-    outline: none;
-    font-size: 120%;
-    font-weight: 700;
     border-radius: 5px;
-    transition: 0.2s linear;
+    cursor: pointer;
+    transition: 0.3s ease;
 }
 
-.content button:hover{
-    scale: 1.1;
-    color:  #8e00f9;
-    border: 2px solid  #8e00f9;
+button:hover {
     background-color: transparent;
-    font-weight: 700;
-    box-shadow: 0 0 40px  #8e00f9;
+    border: 2px solid #8e00f9;
+    color: #8e00f9;
 }
 
-@media (max-width:884px) {
-    nav .logo{
-        position: absolute;
-        top: 16px;
-        left: 15px;
-        font-size: 1.5rem;
-    }
-
+@media (max-width: 600px) {
     .main-container {
-        display: flex;
         flex-direction: column;
+        align-items: center;
     }
 
-    .nav-container .links{
-        display: none;
+    .main-container .content {
+        width: 90%;
     }
 
     .hamburg,
@@ -249,109 +220,15 @@ section{
         display: block;
     }
 
-    .main-container .content{
-        width: 80%;
+    .main-container .image {
+        width: 70%;
     }
 
     .social-links i{
         width: 2.5rem;
         height: 2.5rem;
         font-size: 1.5rem;
-    }
-
-    .main-container .image{
-        z-index: -1;
-        width: 60%;
-        height: 50%;
-    }
-}
-
-@media (max-width:440px){
-    .main-container .image{
-        width: 50%;
-        height: 60%;
-        margin-bottom: 0px;
-    }
-
-    .main-container .content{
-        width: 80%;
-    }
-
-    .main-container button{
-        margin-top: 15px;
-    }
-}
-
-.contact-section {
-    padding: 10px;
-    max-width: 500px;
-    margin: 0 auto;
-}
-
-:root {
-
-   --prev-next-opacity: 0.7;
-}
-
-body {
-
-    display: flex;
-
-    flex-direction: column;
-
-    justify-content: center;
-
-    align-items: center;
-
-    height: 100vh;
-
-    margin: 0;
-
-    font-family:Arial, sans-serif;
-
-}
-
-h1 {
-
-    margin-bottom: 20px;
-}
-
-.main-container .image{
-    width: 100%;
-    max-width: 600px;
-    height: 100%;
-    border-radius: 100%;
-    overflow: hidden;
-    box-shadow: 0 0 50px  #8e00f9;
-}
-
-.body {
-
-    justify-content: center;
-
-    align-items: center;
-
-    height: 100vh;
-
-    margin: o;
-}
-.section {
-    text-align: center;
-    padding: 20px;
-}
-
-.title-red {
-    color: #8e00f9;
-    font-size: 2.5rem;
-    margin-bottom: 15px;
-}
-
-.text-white {
-    color: white;
-    font-size: 1.25rem;
-    margin-bottom: 30px;
-
-
+    } 
 }
 
 .carrossel-container {
@@ -365,7 +242,7 @@ h1 {
 }
 
 .carrossel {
-    width: 80%;
+    width: 90%;
     height: 100%;
     position: relative;
     transform-style: preserve-3d;
@@ -379,37 +256,34 @@ h1 {
 .slide {
     width: 200px;
     height: 220px;
-    background-color: #ccc;
     position: absolute;
-    border: 1px solid #333;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.5s ease;
 }
-
-.slide a {
-
-    display: block;
-
-    width: 100%;
-
-    height: 100%;
-
-}
-
 
 .slide img {
-
-    width: 250px;
-
-    height: 220px;
-
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-
-    border-radius: 0px;
-
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-
+    border-radius: 8px;
 }
+
+h1 {
+
+    margin-bottom: 20px;
+}
+
+.title-red {
+    color: #8e00f9;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.text-white {
+    color: white;
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+}
+
 
 button {
 
@@ -446,58 +320,25 @@ button.proximo {
 }
 
 @media (max-width: 600px) {
-    .vreducativo-section {
-        padding: 10px;
+    .nav-container .links {
+        display: none; 
+        flex-direction: column; 
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        top: 10vh; 
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.8);
     }
-}
 
-
-@media (max-width: 600px) {
-    .main-container .image {
-        width: 80%; /* Torna a imagem menor em telas pequenas */
-        height: auto;
-    }
-
-    .slide {
-        width: 80%;
-        height: auto;
+    .nav-container .links.active {
+        display: flex; 
     }
 }
 
 @media (max-width:884px) {
-    nav .logo {
-        position: absolute;
-        top: 16px;
-        left: 15px;
-        font-size: 1.5rem;
-    }
-
-    .main-container {
-        display: flex;
-        flex-direction: column; /* Adapta o layout para empilhar elementos */
-    }
-
-    .nav-container .links {
-        display: none; /* Esconde links do menu */
-    }
-
-    .hamburg, .cancel {
-        display: block; /* Exibe os ícones do menu hamburguer */
-    }
-
-    .main-container .content {
-        width: 80%; /* Reduz a largura do conteúdo */
-    }
-
-    .social-links i {
-        width: 2.5rem;
-        height: 2.5rem;
-        font-size: 1.5rem;
-    }
-
-    .main-container .image {
-        z-index: -1;
-        width: 60%;
-        height: 50%;
+    .logo {
+        font-size: 1.5rem; 
+        position: relative;
     }
 }
