@@ -121,7 +121,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column; /* Adicionado para melhor layout em telas menores */
+    flex-direction: column; 
 }
 
 .main-container .image {
@@ -333,12 +333,5 @@ button.proximo {
 
     .nav-container .links.active {
         display: flex; 
-    }
-}
-
-@media (max-width:884px) {
-    .logo {
-        font-size: 1.5rem; 
-        position: relative;
     }
 }
